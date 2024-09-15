@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Color palette used
+https://www.realtimecolors.com/?colors=070e13-f0f6fa-224c68-918bda-663cb9&fonts=Inter-Inter%20Tight
+
 ## Getting Started
 
 First, run the development server:

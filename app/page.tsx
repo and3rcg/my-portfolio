@@ -1,56 +1,38 @@
 import Image from "next/image";
 
 import placeholder from "./assets/img/placeholder.webp"
+import MainTechs from "./components/MainTechs/MainTechs";
+import OtherTechs from "./components/OtherTechs/OtherTechs";
+
 
 export default function Home() {
   return (
   <div className="container">
     {/* introduction */}
     <main>
-      <div className="flex justify-around py-8">
-        <div>
-          <h1>Hello World!</h1>
-          <p>My name is Anderson Caminha. I am a software developer. Insert some pretty long text here to see what happens.</p>
+      <div className="flex flex-col gap-8 lg:gap-0 justify-items-center lg:flex-row lg:justify-content-center">
+        <div className="flex-1 flex flex-col gap-10 self-center px-4">
+          <h1 className="text-7xl text-center text-accent-400">Hello World!</h1>
+          <p className="text-2xl">My name is Anderson Caminha. I am a software developer. Insert some pretty long text here to see what happens.</p>
         </div>
-        <div>
-          <Image src={placeholder} alt={"Profile picture"} width={360} height={360} className="rounded-full" />
+        <div className="flex-1">
+          <Image src={placeholder} alt={"Profile picture"} className="rounded-full size-96 mx-auto" />
         </div>
       </div>
     </main>
 
     {/* tech */}
-    <section className="py-8">
+    <section className="flex flex-col py-8 gap-8">
       <div>
-        <div className="flex justify-center">
-          Main techs
-        </div>
-        <div className="flex gap-4 justify-around items-center">
-          <li>Python</li>
-          <li>Node</li>
-          <li>Next.js</li>
-          <li>Typescript</li>
-          <li>Docker</li>
-          <li>Redis</li>
-          <li>PostgreSQL</li>
-        </div>
+        <MainTechs />
       </div>
       <div>
-        <div className="flex justify-center">
-          Other techs
-        </div>
-        <div className="flex gap-4 justify-around items-center">
-          <li>Go</li>
-          <li>Svelte</li>
-          <li>Kubernetes</li>
-          <li>Google Cloud</li>
-          <li>Grafana</li>
-          <li>Prometheus</li>
-        </div>
+        <OtherTechs />
       </div>
     </section>
 
     {/* work experience */}
-    <section className="py-8">
+    <section className="flex flex-col py-8 gap-8">
       <div>
         <div className="flex justify-center">
           Work experience
@@ -63,7 +45,7 @@ export default function Home() {
     </section>
 
     {/* education */}
-    <section className="py-8">
+    <section className="flex flex-col">
       <div>
         <div className="flex justify-center">
           Education

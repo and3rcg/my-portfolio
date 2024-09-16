@@ -1,8 +1,10 @@
 import Image from "next/image";
 
 import placeholder from "./assets/img/placeholder.webp"
-import MainTechs from "./components/MainTechs/MainTechs";
-import OtherTechs from "./components/OtherTechs/OtherTechs";
+
+import Education from "./components/Education/Education";
+import MainTechs from "./components/TechList/MainTechs";
+import OtherTechs from "./components/TechList/OtherTechs";
 
 
 export default function Home() {
@@ -22,7 +24,7 @@ export default function Home() {
     </main>
 
     {/* tech */}
-    <section className="flex flex-col py-8 gap-8">
+    <section className="flex flex-col py-8 gap-16">
       <div>
         <MainTechs />
       </div>
@@ -47,13 +49,7 @@ export default function Home() {
     {/* education */}
     <section className="flex flex-col">
       <div>
-        <div className="flex justify-center">
-          Education
-        </div>
-        <div>
-          <li>Grad school (in progress)</li>
-          <li>Bachelor</li>
-        </div>
+        <Education />
       </div>
     </section>
   </div>

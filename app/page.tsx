@@ -5,6 +5,7 @@ import placeholder from "./assets/img/placeholder.webp"
 import Education from "./components/Education/Education";
 import MainTechs from "./components/TechList/MainTechs";
 import OtherTechs from "./components/TechList/OtherTechs";
+import WorkExperience from "./components/WorkExperience/WorkExperience";
 
 
 export default function Home() {
@@ -36,13 +37,7 @@ export default function Home() {
     {/* work experience */}
     <section className="flex flex-col py-8 gap-8">
       <div>
-        <div className="flex justify-center">
-          Work experience
-        </div>
-        <div>
-          <li>Company 2</li>
-          <li>Company 1</li>
-        </div>
+        <WorkExperience />
       </div>
     </section>
 

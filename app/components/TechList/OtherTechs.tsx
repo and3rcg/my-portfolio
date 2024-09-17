@@ -58,7 +58,7 @@ const OtherTechs = () => {
   return (
     <div className="flex flex-col gap-8 max-w-full">
       <div className="flex justify-center">
-        <h1 className="text-3xl lg:text-5xl text-accent-200">Other techs</h1>
+        <h1 className="text-3xl lg:text-5xl text-accent-300">Other techs</h1>
       </div>
       <div className="flex gap-4 justify-around items-center">
         {techList.map((tech, index) => {
@@ -67,7 +67,7 @@ const OtherTechs = () => {
               <TooltipProvider>
                 <Tooltip delayDuration={100}>
                   <TooltipTrigger><Image src={tech.logo} alt={tech.name} width={112} height={112} className="drop-shadow-lg overflow-x-auto size-16 lg:size-28 cursor-pointer hover:-translate-y-2 duration-500"/></TooltipTrigger>
-                  <TooltipContent>
+                  <TooltipContent className=" p-4 border-1 border-accent-200 bg-secondary-600 text-text-100">
                     <div className="max-w-80 whitespace-break-spaces">
                       <p>{tech.description}</p>
                     </div>

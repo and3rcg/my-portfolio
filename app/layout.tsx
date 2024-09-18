@@ -29,13 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-1 gap-4 place-content-center`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-1 gap-24 place-content-center`}
       >
         <Header />
         <div className="mx-auto">
           {children}
         </div>
-        <footer className="mx-auto w-full bg-primary-300">
+        <footer className="mx-auto mt-8 w-full bg-primary-300">
           <p className="text-center">
             Made by Anderson Caminha, {new Date().getFullYear()}
           </p>

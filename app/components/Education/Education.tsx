@@ -23,7 +23,7 @@ const Education = () => {
       <div className="flex flex-col gap-8">
         {educationObjects.map((obj, index) => {
           return (
-            <div key={index} className="flex flex-col justify-between p-4 bg-primary-800 rounded-lg drop-shadow-xl">
+            <div key={index} className="flex flex-col justify-between p-4">
               <div className="text-primary-300 text-xl">{obj.degree}</div>
               <div className="py-2 text-sm text-primary-500">{obj.year}</div>
               <div>{obj.institution}</div>

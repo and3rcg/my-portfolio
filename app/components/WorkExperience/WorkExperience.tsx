@@ -9,9 +9,10 @@ const WorkExperience = () => {
       duration: "2024 - current",
       url: "https://geplant.com.br/",
       activities: [
-        "act1",
-        "act2",
-        "act3",
+        "Developing new features in a Django application and a Node.js with Sequelize application",
+        "Further expanded internal tools for data analysis and diagnostic for backoffice usage",
+        "Setting up containers and Google Cloud infrastructure, as well as setting up automated deployment via serverless",
+        "Performed profiling and fine tuning in SQL queries, cutting average query timings by 20%",
       ]
     },
     {
@@ -20,9 +21,14 @@ const WorkExperience = () => {
       duration: "2022 - 2024",
       url: "https://www.vindula.com.br/",
       activities: [
-        "act1_2",
-        "act2_2",
-        "act3_2",
+        "Developed new features and maintaned existing backend code",
+        "Maintained a satisfaction rate of over 90% while keeping a 24 hour SLA for support tickets",
+        "Setting up the infrastructure for dev, staging and production environments",
+        "Used Docker Autobuilds and Cloudflare Pages to automate the system's update process",
+        "Improved background worker performance by about 50% by optimizing tasks and container structure",
+        "Implemented caching in several places to improve navigation speeds by up to 80%",
+        "Used Go and Svelte to help create the new version of the company's product from scratch, making decisions about the tech and frameworks used",
+        "Trained newly hired developers",
       ]
     }
   ]
@@ -34,14 +40,13 @@ const WorkExperience = () => {
           <h1 className="text-3xl lg:text-5xl text-accent-300 pb-4">Work Experience</h1>
         </div>
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col">
           {workData.map(obj => {
             return (
-              <div key={obj.company} className="p-4 flex flex-col bg-primary-800 rounded-lg drop-shadow-xl">
-                <div className="text-primary-300 text-2xl">{obj.position}</div>
-                <div className="py-2 text-sm text-primary-500"><Link href={obj.url} target='_blank'>{obj.company}</Link></div>
-                <div className="py-2 text-sm text-primary-500">{obj.duration}</div>
-                <div className="px-4">
+              <div key={obj.company} className="p-4 flex flex-col">
+                <div className="text-primary-300 text-3xl">{obj.position} <span className="py-2 text-primary-500 text-lg">({obj.duration})</span></div>
+                <div className="py-2 text-primary-500"><Link href={obj.url} target='_blank'>{obj.company}</Link></div>
+                <div className="px-8 mt-4">
                   {obj.activities.map((activity, index) => {
                     return (
                       <li key={index}>{activity}</li>

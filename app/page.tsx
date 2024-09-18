@@ -1,8 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Image from "next/image";
+import Link from "next/link";
 
 import placeholder from "./assets/img/placeholder.webp"
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 
 import Education from "./components/Education/Education";
 import MainTechs from "./components/TechList/MainTechs";
@@ -34,7 +39,13 @@ export default function Home() {
           </p>
         </div>
         <div className="flex-1 self-center">
-          <Image src={placeholder} alt={"Profile picture"} className="rounded-full size-96 mx-auto" />
+          <div className="flex flex-col gap-8">
+            <Image src={placeholder} alt={"Profile picture"} className="rounded-full size-96 mx-auto"/>
+            <div className="flex justify-evenly">
+              <Link href={"https://github.com/and3rcg"}><FontAwesomeIcon icon={faGithub} color="foreground" width={40} /></Link>
+              <Link href={"https://www.linkedin.com/in/anderson-cg"}><FontAwesomeIcon icon={faLinkedin} color="foreground" width={40} /></Link>
+            </div>
+          </div>
         </div>
       </div>
     </main>

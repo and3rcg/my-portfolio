@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
+import Contact from "./components/Contact/Contact";
 import Education from "./components/Education/Education";
 import MainTechs from "./components/TechList/MainTechs";
 import OtherTechs from "./components/TechList/OtherTechs";
@@ -29,8 +30,8 @@ export default function Home() {
             DevOps course, and there, I have amazing opportunities to not only get to know, but also use many of the most sought after technologies. 
           </p>
           <p className="text-xl text-justify">
-            What drives me forward in this field is the usage one of mankind's greatest inventions to help people 
-            make time for the things that matter most in life, and how all of that can be achieved with problem solving.
+            What drives me forward in this field is the usage of computers, one of mankind's greatest inventions to help people 
+            make time for the things that matter most in life, and how all of that can be achieved with problem solving, like a big puzzle.
           </p>
           <p className="text-xl text-justify">
             I also love the challenge of constantly learning something new, whether it's a new framework or how anything
@@ -71,6 +72,13 @@ export default function Home() {
     <section className="flex flex-col">
       <div>
         <Education />
+      </div>
+    </section>
+
+    {/* Contact */}
+    <section id="contact" className="flex flex-col">
+      <div>
+        <Contact />
       </div>
     </section>
   </div>

@@ -40,16 +40,16 @@ const WorkExperience = () => {
           <h1 className="text-3xl lg:text-5xl text-accent-300 pb-4">Work Experience</h1>
         </div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4">
           {workData.map(obj => {
             return (
               <div key={obj.company} className="p-4 flex flex-col">
                 <div className="text-primary-300 text-3xl">{obj.position} <span className="py-2 text-primary-500 text-lg">({obj.duration})</span></div>
                 <div className="py-2 text-primary-500"><Link href={obj.url} target='_blank'>{obj.company}</Link></div>
-                <div className="px-8 mt-4">
+                <div className="px-8 mt-2">
                   {obj.activities.map((activity, index) => {
                     return (
-                      <li key={index}>{activity}</li>
+                      <li key={index} className="my-1">{activity}</li>
                     )
                   })}
                 </div>

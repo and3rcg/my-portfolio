@@ -40,7 +40,7 @@ const MainTechs = () => {
     {
       name: 'Redis',
       logo: redis,
-      description: "Used Redis as a caching backend and message broker for Django apps, as well as some Go systems"
+      description: "Used Redis as a caching backend and message broker for Django and Celery apps, as well as some Go systems, with Asynq"
     },
     {
       name: 'PostgreSQL',
@@ -60,8 +60,8 @@ const MainTechs = () => {
             <div key={index} className="flex-none">
               <TooltipProvider>
                 <Tooltip delayDuration={100}>
-                  <TooltipTrigger><Image src={tech.logo} alt={tech.name} width={112} height={112} className="drop-shadow-lg overflow-x-auto size-16 lg:size-28 cursor-pointer hover:-translate-y-2 duration-500"/></TooltipTrigger>
-                  <TooltipContent className=" p-4 border-1 border-accent-200 bg-secondary-600 text-text-100">
+                  <TooltipTrigger><Image src={tech.logo} alt={tech.name} width={100} height={100} className="drop-shadow-lg overflow-x-auto size-16 lg:size-24 cursor-default hover:-translate-y-2 duration-500"/></TooltipTrigger>
+                  <TooltipContent className="p-4 border-1 border-accent-200 bg-secondary-600 text-text-100">
                     <div className="max-w-80 whitespace-break-spaces">
                       <p className="text-justify">{tech.description}</p>
                     </div>

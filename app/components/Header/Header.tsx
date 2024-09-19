@@ -11,8 +11,8 @@ const Header = () => {
             <div className="flex gap-8 items-center">
                 <Link href={"https://www.linkedin.com/in/anderson-cg"} target="_blank">My LinkedIn</Link>
                 <Link href={"https://github.com/and3rcg"} target="_blank">My GitHub</Link>
-                <p>Projects</p>
-                <Link href={"/contact"} className="p-2 border-2 rounded-md border-primary-300">Contact me</Link>
+                <Link href={"/projects"}>Projects</Link>
+                <Link href={"/#contact"} className="p-2 border-2 rounded-md border-primary-300">Contact me</Link>
             </div>
         </div>
     </header>

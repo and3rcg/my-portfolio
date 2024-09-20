@@ -37,7 +37,7 @@ const WorkExperience = () => {
     <div>
       <div className="flex flex-col max-w-full">
         <div className="flex justify-center">
-          <h1 className="text-3xl lg:text-5xl text-accent-300 pb-4">Work Experience</h1>
+          <h1 className="text-3xl lg:text-5xl text-accent-300 mb-2">Work Experience</h1>
         </div>
       </div>
       <div className="flex flex-col gap-4">

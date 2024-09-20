@@ -3,9 +3,9 @@ import React from "react"
 const Education = () => {
   const educationObjects = [
     {
-      institution: "University of Fortaleza",
+      institution: "University of Fortaleza - UNIFOR",
       degree: "Postgraduate course: Specialist in Software Engineering with DevOps",
-      year: "2024 (current)"
+      year: "2024-2025 (currently in progress)"
     },
     {
       institution: "Federal University of Ceará",
@@ -17,7 +17,7 @@ const Education = () => {
     <div>
       <div className="flex flex-col gap-8 max-w-full">
         <div className="flex justify-center">
-          <h1 className="text-3xl lg:text-5xl text-accent-300 pb-4">Education</h1>
+          <h1 className="text-3xl lg:text-5xl text-accent-300 mb-2">Education</h1>
         </div>
       </div>
       <div className="flex flex-col gap-8">

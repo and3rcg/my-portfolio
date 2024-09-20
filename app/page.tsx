@@ -25,18 +25,25 @@ export default function Home() {
         <div className="flex-1 flex flex-col gap-10 self-center px-4">
           <h1 className="text-7xl text-center text-accent-400">Hello World!</h1>
           <p className="text-xl text-justify">
-            My name is Anderson Caminha. I am a software developer with 2 years of work experience, primarily working 
-            with backend Web development and cloud. Currently, I'm taking a postgraduate software engineering and 
-            DevOps course, and there, I have amazing opportunities to not only get to know, but also use many of the most sought after technologies. 
+            My name is Anderson Caminha. I am a software developer with 2 years of work experience, 
+            primarily working with backend Web development and cloud. Currently, I'm taking a postgraduate 
+            software engineering and DevOps course, and there, I have amazing opportunities to not 
+            only get to know, but also use many of the most relevant technologies in the market today. 
           </p>
           <p className="text-xl text-justify">
-            What drives me forward in this field is the usage of computers, one of mankind's greatest inventions to help people 
-            make time for the things that matter most in life, and how all of that can be achieved with problem solving, like a big puzzle.
+            What drives me forward in this field is the leveraging of computing power, one of mankind's 
+            greatest inventions to help people make time for the things that matter most in life, and 
+            how most of that can be achieved with problem solving, like a giant puzzle. Also, I love 
+            the challenge of constantly having to learn something new, whether it's a new framework 
+            or how any process works, really.
           </p>
           <p className="text-xl text-justify">
-            I also love the challenge of constantly learning something new, whether it's a new framework or how anything
-            works, really. For example, you have to learn several forest engineering concepts if you want to understand
-            the code you're writing for a company that works with forests, and almost all rows in your database are living beings.
+            For example, imagine if you're hired to code the business logic of a company
+            whose product is deeply involved with forests. You'll have to take a crash course on forest
+            engineering so you can grasp the concepts and calculations necessary to put together, for
+            example, automatically generated spreadsheets with many parameters describing the behavior
+            of the trees in a plot of land. Every single row of the files you'll be spewing describe 
+            a living being, and that's fascinating for me.
           </p>
         </div>
         <div className="flex-1 self-center">

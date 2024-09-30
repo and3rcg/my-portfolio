@@ -29,7 +29,8 @@ const Projects = () => {
   }
 
   const [data, setData] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,7 +42,7 @@ const Projects = () => {
       setLoading(false);
 
       if (res.status != 200) {
-        alert(data.error);
+        setError(true);
         return;
       }
 
@@ -64,7 +65,12 @@ const Projects = () => {
       </div>
 
       {/* project list */}
-      {loading ?
+      {error ? 
+        <div className="flex justify-center text-2xl">
+          There was an error fetching the projects, and I was just informed of it. I'll be fixing it soon.
+        </div>
+      :
+      loading ?
         <div className="flex justify-center text-2xl animate-bounce">
           Loading...
         </div>

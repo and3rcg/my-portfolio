@@ -9,18 +9,15 @@ export async function POST(req: NextRequest) {
       `${process.env.API_URL}/contact`, {
       method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.API_KEY}`,
       },
       body: JSON.stringify(requestData),
     }
     );
     const responseJSON = await response.json();
 
-    if (response.status != 200) {
-      return NextResponse.json(responseJSON, { status: response.status })
-    }
-
-    return NextResponse.json(responseJSON, { status: 200 })
+    return NextResponse.json(responseJSON, { status: response.status })
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: err }, { status: 500 })

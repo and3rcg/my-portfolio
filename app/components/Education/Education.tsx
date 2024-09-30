@@ -5,12 +5,12 @@ const Education = () => {
     {
       institution: "University of Fortaleza - UNIFOR",
       degree: "Postgraduate course: Specialist in Software Engineering with DevOps",
-      year: "2024-2025 (currently in progress)"
+      status: "In progress",
     },
     {
       institution: "Federal University of Ceará",
       degree: "Bachelor's Degree in Electrical Engineering",
-      year: "2014-2021"
+      status: "Completed",
     }
   ]
   return (
@@ -25,7 +25,7 @@ const Education = () => {
           return (
             <div key={index} className="flex flex-col justify-between p-4">
               <div className="text-primary-300 text-xl">{obj.degree}</div>
-              <div className="py-2 text-sm text-primary-500">{obj.year}</div>
+              <div className="py-2 text-sm text-primary-500">{obj.status}</div>
               <div>{obj.institution}</div>
             </div>
           )

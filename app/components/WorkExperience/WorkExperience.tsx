@@ -9,7 +9,8 @@ const WorkExperience = () => {
       duration: "2024 - current",
       url: "https://geplant.com.br/",
       activities: [
-        "Developing new features in a Django application and a Node.js with Sequelize application",
+        "Developed new features and expanded functionality in backend apps using Django, Flask and Express",
+        "Improved performance and observability of the mapping system by removing a Geoserver that was using unoptimized queries",
         "Further expanded internal tools for data analysis and diagnostic for backoffice usage",
         "Setting up containers and Google Cloud infrastructure, as well as setting up automated deployment via serverless",
         "Performed profiling and fine tuning in SQL queries, cutting average query timings by 20%",

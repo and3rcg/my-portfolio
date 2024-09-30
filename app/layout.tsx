@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-
 import localFont from "next/font/local";
+
+import { Toaster } from "@/components/ui/toaster"
 
 import Header from "./components/Header/Header"
 import "./globals.css";
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-1 gap-24 place-content-center`}
       >
         <Header />
+        <Toaster />
         <div className="mx-auto">
           {children}
         </div>

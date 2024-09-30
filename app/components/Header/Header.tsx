@@ -1,12 +1,15 @@
 import Link from 'next/link'
 import React from 'react'
 
+import { ModeToggle } from "../DarkModeSwitcher/DarkModeSwitcher"
+
 const Header = () => {
   return (
     <header className="md:hidden lg:block mb-6 py-4">
         <div className="container mx-auto flex justify-between">
             <div>
                 <Link href="/" className="text-4xl">Anderson Caminha</Link>
+                <ModeToggle></ModeToggle>
             </div>
             <div className="flex gap-8 items-center">
                 <Link href={"https://www.linkedin.com/in/anderson-cg"} target="_blank">My LinkedIn</Link>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/toaster"
 
 import Header from "./components/Header/Header"
@@ -32,16 +33,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-1 gap-24 place-content-center`}
       >
-        <Header />
-        <Toaster />
-        <div className="mx-auto">
-          {children}
-        </div>
-        <footer className="mx-auto mt-8 w-full bg-primary-300">
-          <p className="text-center">
-            Made by Anderson Caminha, {new Date().getFullYear()}
-          </p>
-        </footer>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <Toaster />
+          <div className="mx-auto">
+            {children}
+          </div>
+          <footer className="mx-auto mt-8 w-full bg-primary-300">
+            <p className="text-center">
+              Made by Anderson Caminha, {new Date().getFullYear()}
+            </p>
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );
